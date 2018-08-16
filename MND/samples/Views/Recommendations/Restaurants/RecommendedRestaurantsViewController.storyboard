@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="O3H-hf-eal">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Recommended Restaurants View Controller-->
+        <scene sceneID="uNw-xj-zeP">
+            <objects>
+                <viewController id="O3H-hf-eal" customClass="RecommendedRestaurantsViewController" customModule="MITK" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nwt-fu-sGb"/>
+                        <viewControllerLayoutGuide type="bottom" id="egf-km-GkB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UkQ-TT-xbF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8G7-7U-KzV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OWW-gD-IaJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="rect" keyPath="contentInset">
+                                                <rect key="value" x="13" y="0.0" width="24" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="O3H-hf-eal" id="hWH-1a-Ljw"/>
+                                            <outlet property="delegate" destination="O3H-hf-eal" id="qdX-t1-6ra"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="OWW-gD-IaJ" firstAttribute="top" secondItem="8G7-7U-KzV" secondAttribute="top" id="8ib-gu-BkY"/>
+                                    <constraint firstItem="OWW-gD-IaJ" firstAttribute="leading" secondItem="8G7-7U-KzV" secondAttribute="leading" id="EtE-vn-Rub"/>
+                                    <constraint firstAttribute="trailing" secondItem="OWW-gD-IaJ" secondAttribute="trailing" id="aOT-qU-FGQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="OWW-gD-IaJ" secondAttribute="bottom" id="sDf-b9-Cb1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8G7-7U-KzV" secondAttribute="trailing" id="10Q-sT-MlU"/>
+                            <constraint firstItem="8G7-7U-KzV" firstAttribute="top" secondItem="UkQ-TT-xbF" secondAttribute="top" id="9bf-h6-dq1"/>
+                            <constraint firstItem="8G7-7U-KzV" firstAttribute="leading" secondItem="UkQ-TT-xbF" secondAttribute="leading" id="Du0-Ps-0l5"/>
+                            <constraint firstItem="egf-km-GkB" firstAttribute="top" secondItem="8G7-7U-KzV" secondAttribute="bottom" id="mWr-Hf-VSu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="recommendationsTableView" destination="OWW-gD-IaJ" id="Qp4-7z-IDX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OY7-uw-J0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="206" y="-589"/>
+        </scene>
+    </scenes>
+</document>

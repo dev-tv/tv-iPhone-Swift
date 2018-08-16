@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9EI-Sh-RMm">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Onboarding Sign View Controller-->
+        <scene sceneID="8C1-Mh-e7J">
+            <objects>
+                <viewController id="9EI-Sh-RMm" customClass="OnboardingSignViewController" customModule="Menud" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z31-rH-VKF"/>
+                        <viewControllerLayoutGuide type="bottom" id="cjd-xy-6NY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OmO-P0-rce">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icOnboardingLater" translatesAutoresizingMaskIntoConstraints="NO" id="jt5-xx-xrO">
+                                <rect key="frame" x="108" y="37" width="88" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jt5-xx-xrO" secondAttribute="height" multiplier="10:9" id="FMQ-FX-XCm"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="130" id="UL0-Nd-P4P"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s get to know you." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZR-32-Tw0">
+                                <rect key="frame" x="16" y="134" width="288" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="0cF-H7-8lN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.094117647060000004" blue="0.20784313730000001" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Sign-up now for a personalized experience. You can favorite dishes and see role models you already follow." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ove-rw-e0s">
+                                <rect key="frame" x="16" y="205.5" width="288" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="4Ca-bS-vo6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.094117647060000004" blue="0.20784313730000001" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDh-wu-TOZ">
+                                <rect key="frame" x="80" y="296" width="160" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="I9t-ax-S4y"/>
+                                    <constraint firstAttribute="width" constant="160" id="w48-Fu-hlz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
+                                <state key="normal" title="I'll personalize later">
+                                    <color key="titleColor" red="0.0" green="0.094117647060000004" blue="0.20784313730000001" alpha="0.5" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signLaterClicked:" destination="9EI-Sh-RMm" eventType="touchUpInside" id="P9z-Td-QX9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wx5-ug-dYB">
+                                <rect key="frame" x="0.0" y="357" width="320" height="69"/>
+                                <color key="backgroundColor" red="0.0" green="0.66666666669999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="FF9-1e-YdT"/>
+                                    <constraint firstAttribute="height" constant="69" id="fdQ-QI-535"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                                <state key="normal" title="Personalize Now">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpClicked:" destination="9EI-Sh-RMm" eventType="touchUpInside" id="Qj3-sW-bAu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WZR-32-Tw0" firstAttribute="top" secondItem="jt5-xx-xrO" secondAttribute="bottom" constant="18" id="1WU-BL-4rB"/>
+                            <constraint firstItem="ove-rw-e0s" firstAttribute="centerY" secondItem="OmO-P0-rce" secondAttribute="centerY" id="DIa-Md-UEm"/>
+                            <constraint firstItem="wx5-ug-dYB" firstAttribute="centerX" secondItem="OmO-P0-rce" secondAttribute="centerX" id="Eni-4f-g9F"/>
+                            <constraint firstItem="cjd-xy-6NY" firstAttribute="top" secondItem="wx5-ug-dYB" secondAttribute="bottom" constant="54" id="NQB-LH-be2"/>
+                            <constraint firstItem="ove-rw-e0s" firstAttribute="top" relation="greaterThanOrEqual" secondItem="WZR-32-Tw0" secondAttribute="bottom" constant="35.5" id="Oeh-3m-OFD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ove-rw-e0s" secondAttribute="trailing" id="Pcf-A8-ABF"/>
+                            <constraint firstItem="jt5-xx-xrO" firstAttribute="centerX" secondItem="OmO-P0-rce" secondAttribute="centerX" constant="-8" id="YpP-b5-fqH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WZR-32-Tw0" secondAttribute="trailing" id="ZHE-gY-4oX"/>
+                            <constraint firstItem="jt5-xx-xrO" firstAttribute="top" secondItem="Z31-rH-VKF" secondAttribute="bottom" constant="17" id="he3-xM-izY"/>
+                            <constraint firstItem="wx5-ug-dYB" firstAttribute="top" secondItem="mDh-wu-TOZ" secondAttribute="bottom" constant="17" id="iJc-g7-TeG"/>
+                            <constraint firstItem="mDh-wu-TOZ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ove-rw-e0s" secondAttribute="bottom" constant="10" id="nHO-9J-4QG"/>
+                            <constraint firstItem="WZR-32-Tw0" firstAttribute="leading" secondItem="OmO-P0-rce" secondAttribute="leadingMargin" id="ugl-I4-GpV"/>
+                            <constraint firstItem="ove-rw-e0s" firstAttribute="leading" secondItem="OmO-P0-rce" secondAttribute="leadingMargin" id="vAi-Ih-kLU"/>
+                            <constraint firstItem="mDh-wu-TOZ" firstAttribute="centerX" secondItem="OmO-P0-rce" secondAttribute="centerX" id="vpc-eR-IWk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="ove-rw-e0s" id="owq-1Z-CPU"/>
+                        <outlet property="titleLabel" destination="WZR-32-Tw0" id="eJo-Y9-MbH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQK-Ph-UYf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="294.20289855072468" y="-342.39130434782612"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icOnboardingLater" width="130" height="79"/>
+    </resources>
+</document>

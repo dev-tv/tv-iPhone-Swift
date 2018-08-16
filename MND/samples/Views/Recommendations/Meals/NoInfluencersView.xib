@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NoInfluencersView" customModule="MITK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="loF-uF-KFo">
+                    <rect key="frame" x="-3" y="-1" width="375" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're not following anyone..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYW-Po-cVi">
+                            <rect key="frame" x="44" y="227" width="288.5" height="26"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="22"/>
+                            <color key="textColor" red="0.0" green="0.094117647060000004" blue="0.20784313730000001" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Follow a role model to see their meal recommendations and make eating healthy easier." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7du-33-Yd2">
+                            <rect key="frame" x="20" y="260" width="335" height="67"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="67" id="f4K-IJ-Ci6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.094117647060000004" blue="0.20784313730000001" alpha="0.5" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWt-kd-eZ8">
+                            <rect key="frame" x="62" y="347" width="251" height="54"/>
+                            <color key="backgroundColor" red="0.0" green="0.66666666669999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="251" id="GaJ-IB-p7q"/>
+                                <constraint firstAttribute="height" constant="54" id="vvv-tS-lpX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                            <state key="normal" title="Find Role Model">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="KYW-Po-cVi" firstAttribute="centerX" secondItem="loF-uF-KFo" secondAttribute="centerX" id="7wV-pQ-xuv"/>
+                        <constraint firstItem="IWt-kd-eZ8" firstAttribute="centerX" secondItem="loF-uF-KFo" secondAttribute="centerX" id="8HG-Nf-LHD"/>
+                        <constraint firstItem="7du-33-Yd2" firstAttribute="centerY" secondItem="loF-uF-KFo" secondAttribute="centerY" constant="-40" id="J06-XV-JUI"/>
+                        <constraint firstAttribute="trailing" secondItem="7du-33-Yd2" secondAttribute="trailing" constant="20" id="KWL-Y0-vru"/>
+                        <constraint firstItem="7du-33-Yd2" firstAttribute="top" secondItem="KYW-Po-cVi" secondAttribute="bottom" constant="7" id="MWZ-u9-raU"/>
+                        <constraint firstItem="7du-33-Yd2" firstAttribute="leading" secondItem="loF-uF-KFo" secondAttribute="leading" constant="20" id="N45-99-fZ1"/>
+                        <constraint firstItem="IWt-kd-eZ8" firstAttribute="top" secondItem="7du-33-Yd2" secondAttribute="bottom" constant="20" id="dV9-nD-Ema"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="loF-uF-KFo" secondAttribute="trailing" constant="3" id="94d-RS-qF9"/>
+                <constraint firstItem="loF-uF-KFo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-3" id="Dnf-rS-A4R"/>
+                <constraint firstAttribute="bottom" secondItem="loF-uF-KFo" secondAttribute="bottom" constant="1" id="eJe-7K-22e"/>
+                <constraint firstItem="loF-uF-KFo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-1" id="u6X-q5-wnq"/>
+            </constraints>
+            <connections>
+                <outlet property="findInfluencerButton" destination="IWt-kd-eZ8" id="oa1-1U-iPB"/>
+            </connections>
+        </view>
+    </objects>
+</document>
