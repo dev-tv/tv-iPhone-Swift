@@ -17,13 +17,32 @@
 ![](https://raw.githubusercontent.com/dev-tv/tv-iPhone-Swift/master/CVR/snapshots/snapshot1.png)
 
 # 4. ANLOG
-## Calender Event
 
+
+## Create Event
+
+![](https://raw.githubusercontent.com/dev-tv/tv-iPhone-Swift/master/ANLOG/CreateEvent/snapshots/analog_banner_3.png)
+
+
+
+## Calender Event
 
 ![](https://github.com/dev-tv/tv-iPhone-Swift/blob/master/ANLOG/CalenderEvent/snapshots/analog_banner_1.png?raw=true)
 
 
+
+## Dynamic Weather Report
+
+![](https://raw.githubusercontent.com/dev-tv/tv-iPhone-Swift/master/ANLOG/DynamicSunLoc/snapshots/analog_banner_4.png)
+
+
+
 ## Weather unit convertor
 
-
 ![](https://raw.githubusercontent.com/dev-tv/tv-iPhone-Swift/master/ANLOG/ConversionCelcToFahr./snapshots/analog_banner_2.png)
+
+
+
+## Change App Themes/Fonts
+
+![](https://raw.githubusercontent.com/dev-tv/tv-iPhone-Swift/master/ANLOG/SettingFeature/snapshots/analog_banner_5.png)
